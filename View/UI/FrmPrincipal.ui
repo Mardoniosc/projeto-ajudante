@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>477</width>
+    <height>286</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Home</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icone/ajudante_icone.ico</normaloff>../icone/ajudante_icone.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>451</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>Dados de usuário logado</string>
+    </property>
+    <widget class="QLabel" name="label_bemvindo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Bem vindo: </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_nome_usurio">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>29</y>
+       <width>361</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Usuário não encontrado</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_diferente">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>111</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Diferente</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>411</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Se sua senha da conta A for diferente da P marque o checkBox abaixo!</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Senha A: </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_senha">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>180</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>********</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>411</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>E digite a senha da sua conta A</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>477</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <widget class="QMenu" name="menuLogin">
+     <property name="title">
+      <string>Login</string>
+     </property>
+     <addaction name="actionCofre_Recilclador"/>
+     <addaction name="actionEsta_o_de_Captura"/>
+     <addaction name="actionEsta_o_de_Trabalho"/>
+     <addaction name="actionEstal_ao_Financeira"/>
+    </widget>
+    <widget class="QMenu" name="menuGerador_de_notas">
+     <property name="title">
+      <string>Gerador de notas</string>
+     </property>
+     <addaction name="actionFechamento"/>
+     <addaction name="actionEncaminhamento"/>
+     <addaction name="actionTentativa_de_Contato"/>
+    </widget>
+    <widget class="QMenu" name="menuRegistro_de_chamado">
+     <property name="title">
+      <string>Registro de chamado</string>
+     </property>
+     <addaction name="actionGerar_Relat_rio"/>
+     <addaction name="actionRegistrar_Chamado"/>
+    </widget>
+    <addaction name="menuRegistro_de_chamado"/>
+    <addaction name="menuGerador_de_notas"/>
+    <addaction name="separator"/>
+    <addaction name="menuLogin"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionSobre"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <action name="actionSobre">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="actionLogin_ET">
+   <property name="text">
+    <string>Login ET</string>
+   </property>
+  </action>
+  <action name="actionLogin_EF">
+   <property name="text">
+    <string>Login EF</string>
+   </property>
+  </action>
+  <action name="actionEsta_o_de_Trabalho">
+   <property name="text">
+    <string>Estação de Trabalho</string>
+   </property>
+  </action>
+  <action name="actionEstal_ao_Financeira">
+   <property name="text">
+    <string>Estação Financeira</string>
+   </property>
+  </action>
+  <action name="actionEsta_o_de_Captura">
+   <property name="text">
+    <string>Estação de Captura</string>
+   </property>
+  </action>
+  <action name="actionCofre_Recilclador">
+   <property name="text">
+    <string>Cofre Recilclador</string>
+   </property>
+  </action>
+  <action name="actionPadrao">
+   <property name="text">
+    <string>Padrao</string>
+   </property>
+  </action>
+  <action name="actionImprocedente">
+   <property name="text">
+    <string>Improcedente</string>
+   </property>
+  </action>
+  <action name="actionTentativa">
+   <property name="text">
+    <string>Tentativa</string>
+   </property>
+  </action>
+  <action name="actionAgendamento">
+   <property name="text">
+    <string>Agendamento</string>
+   </property>
+  </action>
+  <action name="actionIndisponibilidade">
+   <property name="text">
+    <string>Indisponibilidade</string>
+   </property>
+  </action>
+  <action name="action3_Tentativa">
+   <property name="text">
+    <string>3° Tentativa</string>
+   </property>
+  </action>
+  <action name="actionCaixa">
+   <property name="text">
+    <string>Caixa</string>
+   </property>
+  </action>
+  <action name="actionExterno">
+   <property name="text">
+    <string>Externo</string>
+   </property>
+  </action>
+  <action name="actionFechamento">
+   <property name="text">
+    <string>Fechamento</string>
+   </property>
+  </action>
+  <action name="actionEncaminhamento">
+   <property name="text">
+    <string>Encaminhamento</string>
+   </property>
+  </action>
+  <action name="actionTentativa_de_Contato">
+   <property name="text">
+    <string>Tentativa de Contato</string>
+   </property>
+  </action>
+  <action name="actionGerar_Relat_rio">
+   <property name="text">
+    <string>Gerar Relatório</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Chamado">
+   <property name="text">
+    <string>Registrar Chamado</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

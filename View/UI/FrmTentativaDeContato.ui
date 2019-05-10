@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormTentativaDeContato</class>
+ <widget class="QWidget" name="FormTentativaDeContato">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>438</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tentativa de Contato</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icone/ajudante_icone.ico</normaloff>../icone/ajudante_icone.ico</iconset>
+  </property>
+  <widget class="QRadioButton" name="radio_1">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>120</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1°</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_usuario_contato">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>80</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Fulado da Silva</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tipo de Nota:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>200</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Telefone (Outlook / Unidade):</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>80</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Usuário:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>120</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tentativa de N°</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radio_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>120</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>3°</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>160</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Telefone (Chamado):</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>240</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Status lync/skype:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_telefone_chamado">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>160</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>99 9999-9999</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_gerar_nota_contato">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>320</y>
+     <width>341</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gerar Nota</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="box_status_lync">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>240</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>2000</width>
+     <height>2000</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>Disponível</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Offiline</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ocupado</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Não Incomodar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Volto Logo</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ausente</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Desconhecido</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="input_telefone_catalogo">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>200</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>99 9999-9999</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="box_fila_contato">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>280</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>2000</width>
+     <height>2000</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>Ambiente Windows</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Automação Bancária e SIGAT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cadastramento e Senha</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Comunicação Eletronica</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Conformidade</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Impreossoras e Relatórios VDR</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Instalação de Software</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sistemas</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Suporte a Navegadores</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="box_tipo_nota_contato">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>40</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Tentativa de Contato</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3° Tentativa de Contato</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Indisponibilidade</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Agendamento</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QRadioButton" name="radio_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>120</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>2°</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>280</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Fila de Atendimento:</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>401</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Tentativa de Contato</string>
+   </property>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>radio_1</zorder>
+  <zorder>input_usuario_contato</zorder>
+  <zorder>label_20</zorder>
+  <zorder>label_19</zorder>
+  <zorder>label_16</zorder>
+  <zorder>label_17</zorder>
+  <zorder>radio_3</zorder>
+  <zorder>label_18</zorder>
+  <zorder>label_21</zorder>
+  <zorder>input_telefone_chamado</zorder>
+  <zorder>button_gerar_nota_contato</zorder>
+  <zorder>box_status_lync</zorder>
+  <zorder>input_telefone_catalogo</zorder>
+  <zorder>box_fila_contato</zorder>
+  <zorder>box_tipo_nota_contato</zorder>
+  <zorder>radio_2</zorder>
+  <zorder>label_15</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>box_tipo_nota_contato</tabstop>
+  <tabstop>input_usuario_contato</tabstop>
+  <tabstop>radio_1</tabstop>
+  <tabstop>radio_2</tabstop>
+  <tabstop>radio_3</tabstop>
+  <tabstop>input_telefone_chamado</tabstop>
+  <tabstop>input_telefone_catalogo</tabstop>
+  <tabstop>box_status_lync</tabstop>
+  <tabstop>box_fila_contato</tabstop>
+  <tabstop>button_gerar_nota_contato</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormFechamento</class>
+ <widget class="QWidget" name="FormFechamento">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>435</width>
+    <height>382</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Fechamento</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icone/ajudante_icone.ico</normaloff>../icone/ajudante_icone.ico</iconset>
+  </property>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Procedimento Realizado: </string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>411</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Fechamento</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_gerar_nota">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>300</y>
+     <width>341</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gerar Nota de Fechamento</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="box_fila">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>220</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>2000</width>
+     <height>2000</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>Ambiente Windows</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Automação Bancária e SIGAT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cadastramento e Senha</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Comunicação Eletronica</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Conformidade</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Impreossoras e Relatórios VDR</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Instalação de Software</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sistemas</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Suporte a Navegadores</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>260</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Acompanhamento do usuário:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_41">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Orientação:</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radio_nao">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>260</y>
+     <width>82</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>NÃO</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_ocorrencia">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>100</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>MyExtra</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_usuario">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>70</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Fulado da Silva</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_43">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tipo de Nota:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="box_procedimento">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>130</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Configuração</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Desistalação</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Instalação</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Orientação</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Reinstalação</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_39">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ocorrência:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_42">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Usuário:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="box_tipo_nota">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>40</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Fechamento Usário</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Improcedente</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainText_orientacao">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>160</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_40">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Fila de Atendimento:</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radio_sim">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>260</y>
+     <width>82</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SIM</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>box_tipo_nota</tabstop>
+  <tabstop>input_usuario</tabstop>
+  <tabstop>input_ocorrencia</tabstop>
+  <tabstop>box_procedimento</tabstop>
+  <tabstop>plainText_orientacao</tabstop>
+  <tabstop>box_fila</tabstop>
+  <tabstop>radio_sim</tabstop>
+  <tabstop>radio_nao</tabstop>
+  <tabstop>button_gerar_nota</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
