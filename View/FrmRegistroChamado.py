@@ -10,9 +10,6 @@ class FrmRegistroChamado(QWidget):
         loadUi('view/UI/FrmRegistroDeChamados.ui', self)
         self.setWindowTitle('Registro de Chamados')
 
-        def faz_algo():
-            pass
-
 if __name__ == '__main__':
     app=QApplication(sys.argv)
     widget=FrmRegistroChamado()

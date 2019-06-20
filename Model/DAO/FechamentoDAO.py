@@ -3,8 +3,6 @@ NOTAS = "\\\\DF7562NT713\Mardonio$\\Notas"
 
 class FechamentoDAO:
     # pegar informações
-
-
     @staticmethod
     def gerar_nota(dados, tipo="Fechamento Usário"):
 
