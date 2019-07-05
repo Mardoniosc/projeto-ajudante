@@ -6,6 +6,7 @@ from PyQt5.QtCore import QObject, QThread, pyqtSignal
 from PyQt5.uic import loadUi
 from jobs.Trabalho import Trabalho
 from .FrmPrincipal import FrmPrincipal
+from Diversos.recursos import teste_conexao, Mbox
 
 class FrmLogin(QDialog):
     def __init__(self):

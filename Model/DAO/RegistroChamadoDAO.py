@@ -2,8 +2,6 @@
 from Diversos.ConexaoBancoDeDadosMySQL import ConexaoBDMySql
 con = ConexaoBDMySql("sd_chamados", "sd", "sd", "DF7562NT713")
 
-
-
 class RegistroChamadoDAO:
 
     # Exemplo de recebimento dos dados
@@ -38,6 +36,7 @@ class RegistroChamadoDAO:
         return resultado
 
     def inserir(self, dados):
+
         sql = "insert into registros  (id,data_registro,atendente,chamado,problema,estatus,nome_logico,vip,critico,hora_registro)" \
               "VALUES (null,%d,'%s','%s','%s','%s','%s',%d,%d,'%s')" % (
               dados.DataRegistro, dados.Atendente, dados.Chamado, dados.Problema, dados.Status,

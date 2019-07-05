@@ -29,7 +29,7 @@
    <property name="title">
     <string>Registro de Chamados</string>
    </property>
-   <widget class="QPushButton" name="buttonRegistrarChamado_2">
+   <widget class="QPushButton" name="buttonRegistrarChamado">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -42,7 +42,7 @@
      <string>Registrar Chamado</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="check_critico_2">
+   <widget class="QCheckBox" name="check_critico">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -71,7 +71,7 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="input_atendente_2">
+   <widget class="QLineEdit" name="input_atendente">
     <property name="enabled">
      <bool>false</bool>
     </property>
@@ -108,7 +108,7 @@
      <string>Data:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="input_problema_3">
+   <widget class="QLineEdit" name="input_problema">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -127,7 +127,7 @@
      <string>SISAG</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="check_vip_2">
+   <widget class="QCheckBox" name="check_vip">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -192,7 +192,7 @@
      <string>Atendido por:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="input_data_2">
+   <widget class="QLineEdit" name="input_data">
     <property name="enabled">
      <bool>false</bool>
     </property>
@@ -211,7 +211,7 @@
      <string>23/03/2018</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="box_status_2">
+   <widget class="QComboBox" name="box_status">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -260,7 +260,7 @@
      <string>Problema: </string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="input_chamado_2">
+   <widget class="QLineEdit" name="input_chamado">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -297,7 +297,7 @@
      <string>Nome Logico:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="input_nomeLogico_2">
+   <widget class="QLineEdit" name="input_nomeLogico">
     <property name="geometry">
      <rect>
       <x>140</x>

@@ -21,7 +21,7 @@ class RegistroChamadoCTR:
 
         registroChamadoDAO = RegistroChamadoDAO
 
-        registroChamadoDAO.print_dados(registroChamadoDTO)
+        registroChamadoDAO.inserir(registroChamadoDTO)
 
     @staticmethod
     def pesquisar(tipo, atendente, registro):
@@ -59,9 +59,9 @@ class RegistroChamadoCTR:
     def atualizar():
         pass
 
-x = RegistroChamadoCTR
-x.inserrir("14/08/1991",'Mardonio','wo000011','algumacoisa','Concluido',
-             'DF7562ET356',0,0,'23:41:45')
-
-x.pesquisar(4,"Mardonio Silva da Costa", "WO0000038181250")
+# x = RegistroChamadoCTR
+# x.inserrir("14/08/1991",'Mardonio','wo000011','algumacoisa','Concluido',
+#              'DF7562ET356',0,0,'23:41:45')
+#
+# x.pesquisar(4,"Mardonio Silva da Costa", "WO0000038181250")
 

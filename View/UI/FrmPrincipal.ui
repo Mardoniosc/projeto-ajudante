@@ -214,6 +214,8 @@
      </property>
      <addaction name="actionGerar_Relat_rio"/>
      <addaction name="actionRegistrar_Chamado"/>
+     <addaction name="actionConsultar_Chamado"/>
+     <addaction name="actionDeletar_Chamado"/>
     </widget>
     <addaction name="menuRegistro_de_chamado"/>
     <addaction name="menuGerador_de_notas"/>
@@ -334,6 +336,16 @@
   <action name="actionRegistrar_Chamado">
    <property name="text">
     <string>Registrar Chamado</string>
+   </property>
+  </action>
+  <action name="actionConsultar_Chamado">
+   <property name="text">
+    <string>Consultar Chamado</string>
+   </property>
+  </action>
+  <action name="actionDeletar_Chamado">
+   <property name="text">
+    <string>Deletar Chamado</string>
    </property>
   </action>
  </widget>

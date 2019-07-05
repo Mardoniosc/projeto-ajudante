@@ -22,7 +22,6 @@ class FrmPrincipal(QMainWindow):
     def __init__(self):
         super(FrmPrincipal, self).__init__()
         loadUi('view/UI/FrmPrincipal.ui', self)
-
         dados = self.pega_usuario_senha()
         global usuarioP
         global senhaP
