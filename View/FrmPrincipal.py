@@ -9,6 +9,8 @@
         Arquivo principal de controle do sistema.
     .UPDATES
         03/05/2019 - P772920 - Adicionado novas view.
+        05/07/2019 - P772920 - Adicionando novos menos no registro de chamado
+        05/07/2019 - P772920 - Adicionando um campo para registro de chamado em lote
 """
 
 from .FrmLogin import *
@@ -17,6 +19,13 @@ from .FrmFechamento import FrmFechamento
 from .FrmTentativaDeContato import FrmTentativaDeContato
 from .FrmEncaminhamento import FrmEncaminhamento
 from .FrmRegistroChamado import FrmRegistroChamado
+from View.FrmRegistroAutomaticoChamados import RegistroAutomaticoDeChamados
+from Diversos.zueira_em_desenvolvimento import zueira
+
+# VARIAVEIS GLOBAIS
+EM_DESENVOLVIMENTO_REL = 0
+EM_DESENVOLVIMENTO_CONSULTA = 0
+EM_DESENVOLVIMENTO_DEL = 0
 
 class FrmPrincipal(QMainWindow):
     def __init__(self):
@@ -34,6 +43,10 @@ class FrmPrincipal(QMainWindow):
 
         # SubMenu Registro de chamados
         self.actionRegistrar_Chamado.triggered.connect(self.click_registrar_chamados)
+        self.actionRegistrar_Chamado_Em_Lote.triggered.connect(self.click_fechamento_em_lote)
+        self.actionGerar_Relatorio.triggered.connect(self.click_desenvolvimento_rel)
+        self.actionConsultar_Chamado.triggered.connect(self.click_desenvolvimento_consulta)
+        self.actionDeletar_Chamado.triggered.connect(self.click_desenvolvimento_del)
 
         #SubMenu Gerador de notas
         self.actionFechamento.triggered.connect(self.click_fechamento)
@@ -46,7 +59,6 @@ class FrmPrincipal(QMainWindow):
         self.actionCofre_Recilclador.triggered.connect(self.estacao_trabalho_login)
         self.actionEsta_o_de_Captura.triggered.connect(self.estacao_captura_login)
         self.actionEstal_ao_Financeira.triggered.connect(self.estacao_financeira_login)
-
 
         self.actionSair.triggered.connect(self.click_sair)
         # Body
@@ -122,6 +134,17 @@ class FrmPrincipal(QMainWindow):
         self.widget = FrmRegistroChamado()
         self.widget.show()
 
+    def click_fechamento_em_lote(self):
+
+        escolha = QMessageBox.question(self, "Registro de chamado em lote", "Para registro de chamado em lote favor"
+                                                                            "contatar 'P772920 - Mardonio'\n\nCaso já"
+                                                                            "tenha contactado e recebeu a orientação "
+                                                                            "favor clicar em sim que o programa vai realizar "
+                                                                            "o registro de chamado automaticamente",
+                                       QMessageBox.Yes | QMessageBox.No)
+        if escolha == QMessageBox.Yes:
+            RegistroAutomaticoDeChamados()
+
         ############################  SUBMENU GERAR NOTAS   ###############################
 
     def click_fechamento(self):
@@ -141,8 +164,31 @@ class FrmPrincipal(QMainWindow):
 
         ######################################  SUBMENU SAIR   ###########################################
 
+
     def click_sair(self):
         exit()
+
+
+        ############################  FUNÇÃO PARA BOTÃO EM DESENVOLVIMENTO   #################################
+
+    def click_desenvolvimento_rel(self):
+        global EM_DESENVOLVIMENTO_REL
+        EM_DESENVOLVIMENTO_REL = EM_DESENVOLVIMENTO_REL + 1
+        titulo, mensagem = zueira(EM_DESENVOLVIMENTO_REL)
+        QMessageBox.information(self, titulo, mensagem)
+
+    def click_desenvolvimento_consulta(self):
+        global EM_DESENVOLVIMENTO_CONSULTA
+        EM_DESENVOLVIMENTO_CONSULTA = EM_DESENVOLVIMENTO_CONSULTA + 1
+        titulo, mensagem = zueira(EM_DESENVOLVIMENTO_CONSULTA)
+        QMessageBox.information(self, titulo, mensagem)
+
+    def click_desenvolvimento_del(self):
+        global EM_DESENVOLVIMENTO_DEL
+        EM_DESENVOLVIMENTO_DEL = EM_DESENVOLVIMENTO_DEL + 1
+        titulo, mensagem = zueira(EM_DESENVOLVIMENTO_DEL)
+        QMessageBox.information(self, titulo, mensagem)
+
 
 if __name__ == '__main__':
     app=QApplication(sys.argv)

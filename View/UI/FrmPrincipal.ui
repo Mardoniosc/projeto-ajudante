@@ -212,10 +212,11 @@
      <property name="title">
       <string>Registro de chamado</string>
      </property>
-     <addaction name="actionGerar_Relat_rio"/>
+     <addaction name="actionGerar_Relatorio"/>
      <addaction name="actionRegistrar_Chamado"/>
      <addaction name="actionConsultar_Chamado"/>
      <addaction name="actionDeletar_Chamado"/>
+     <addaction name="actionRegistrar_Chamado_Em_Lote"/>
     </widget>
     <addaction name="menuRegistro_de_chamado"/>
     <addaction name="menuGerador_de_notas"/>
@@ -328,7 +329,7 @@
     <string>Tentativa de Contato</string>
    </property>
   </action>
-  <action name="actionGerar_Relat_rio">
+  <action name="actionGerar_Relatorio">
    <property name="text">
     <string>Gerar Relatório</string>
    </property>
@@ -346,6 +347,11 @@
   <action name="actionDeletar_Chamado">
    <property name="text">
     <string>Deletar Chamado</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Chamado_Em_Lote">
+   <property name="text">
+    <string>Registrar Chamados Em Lote</string>
    </property>
   </action>
  </widget>
