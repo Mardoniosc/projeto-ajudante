@@ -166,8 +166,7 @@ class FrmPrincipal(QMainWindow):
 
 
     def click_sair(self):
-        exit()
-
+        sys.exit()
 
         ############################  FUNÇÃO PARA BOTÃO EM DESENVOLVIMENTO   #################################
 

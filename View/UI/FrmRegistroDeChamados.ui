@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>FrmRegistroChamado</class>
+ <widget class="QWidget" name="FrmRegistroChamado">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -336,6 +336,17 @@
    </widget>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>input_data</tabstop>
+  <tabstop>input_atendente</tabstop>
+  <tabstop>input_chamado</tabstop>
+  <tabstop>input_problema</tabstop>
+  <tabstop>box_status</tabstop>
+  <tabstop>input_nomeLogico</tabstop>
+  <tabstop>check_critico</tabstop>
+  <tabstop>check_vip</tabstop>
+  <tabstop>buttonRegistrarChamado</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

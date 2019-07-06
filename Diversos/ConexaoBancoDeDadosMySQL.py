@@ -22,8 +22,10 @@ class ConexaoBDMySql(object):
             cur.execute(sql)
             cur.close()
             self.DADOS_CONEXAO.commit()
-        except:
-            return False
+            return True
+        except Exception as e:
+            print(e)
+            return e, False
 
     def consulta(self, sql):
         rs = None

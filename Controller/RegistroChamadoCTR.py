@@ -1,5 +1,5 @@
 # coding: utf-8
-from Model.DTO.RegistroChamadoDTO import RegistroChamadoDTO
+from Model.DTO.RegistroAutomaticoDTO import RegistroAutomaticoDTO
 from Model.DAO.RegistroChamadoDAO import RegistroChamadoDAO
 
 class RegistroChamadoCTR:
@@ -8,21 +8,21 @@ class RegistroChamadoCTR:
     def inserrir(data_guardar, atendente, chamado, problema, status, nome_logico, vip,
                                                  critico, hora_guardar):
 
-        registroChamadoDTO = RegistroChamadoDTO
-        registroChamadoDTO.DataRegistro = data_guardar
+        registroChamadoDTO = RegistroAutomaticoDTO
+        registroChamadoDTO.Data_registro = data_guardar
         registroChamadoDTO.Atendente = atendente
         registroChamadoDTO.Chamado = chamado
         registroChamadoDTO.Problema = problema
         registroChamadoDTO.Status = status
-        registroChamadoDTO.NomeLogico = nome_logico
+        registroChamadoDTO.Nome_logico = nome_logico
         registroChamadoDTO.Vip = vip
         registroChamadoDTO.Critico = critico
-        registroChamadoDTO.HoraRegistro = hora_guardar
+        registroChamadoDTO.Hora_registro = hora_guardar
 
         registroChamadoDAO = RegistroChamadoDAO
 
-        registroChamadoDAO.inserir(registroChamadoDTO)
-
+        resultado = registroChamadoDAO.inserir(registroChamadoDTO)
+        return resultado
     @staticmethod
     def pesquisar(tipo, atendente, registro):
         registroChamadoDTO = RegistroChamadoDTO

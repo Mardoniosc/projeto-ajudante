@@ -34,16 +34,26 @@ class RegistroChamadoDAO:
         resultado = con.manipular(sql)
         con.fechar()
         return resultado
-
-    def inserir(self, dados):
-
-        sql = "insert into registros  (id,data_registro,atendente,chamado,problema,estatus,nome_logico,vip,critico,hora_registro)" \
+    @staticmethod
+    def inserir(dados):
+        #
+        # sql = "insert into registros  (id,data_registro,atendente,chamado,problema,estatus,nome_logico,vip,critico,hora_registro)" \
+        #       "VALUES (null,%d,'%s','%s','%s','%s','%s',%d,%d,'%s')" % (
+        #       dados.DataRegistro, dados.Atendente, dados.Chamado, dados.Problema, dados.Status,
+        #       dados.NomeLogico, dados.Vip, dados.Critico, dados.HoraRegistro)
+        # resultado = con.manipular(sql)
+        # con.fechar()
+        # return resultado
+        sql = "insert into registros  (id,data_registro,atendente,chamado,problema,estatus,nome_logico,vip,critico," \
+              "hora_registro)" \
               "VALUES (null,%d,'%s','%s','%s','%s','%s',%d,%d,'%s')" % (
-              dados.DataRegistro, dados.Atendente, dados.Chamado, dados.Problema, dados.Status,
-              dados.NomeLogico, dados.Vip, dados.Critico, dados.HoraRegistro)
+                  dados.Data_registro, dados.Atendente, dados.Chamado, dados.Problema, dados.Status,
+                  dados.Nome_logico,
+                  dados.Vip, dados.Critico, dados.Hora_registro)
         resultado = con.manipular(sql)
-        con.fechar()
         return resultado
+
+
 
     def atualizar(self, dados):
         sql = ("UPDATE `registros` SET `data_registro` = %d, `atendente` = '%s', `chamado` = '%s', `problema` = '%s', "
